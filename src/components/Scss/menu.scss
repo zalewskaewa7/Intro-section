@@ -1,0 +1,21 @@
+.menuList{
+    display: flex;
+
+    li{
+        list-style-type: none;
+        margin: 0 2%;
+
+        ul{
+            padding: 2%;
+            background-color: white;
+            li{
+                 img{
+            margin: 0 2%;
+            }
+            
+        }
+        }
+
+       
+    }
+}
