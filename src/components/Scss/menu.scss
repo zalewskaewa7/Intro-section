@@ -1,16 +1,33 @@
 .menuList{
     display: flex;
+    flex: 0 50%;
+
+    justify-content: space-between;
 
     li{
         list-style-type: none;
-        margin: 0 2%;
+        margin: 2%;
+        
 
-        ul{
-            padding: 2%;
+        flex: 0 25%;
+        cursor: pointer;
+
+        .podMenuList{
+            padding: 4% 6%;
+            margin: 15% 0;
             background-color: white;
+            border-radius: 10px;
             li{
+                display:flex;
+                justify-content:flex-start;
+                padding: 2%;
+                margin:  auto;
+                width: 90%;
+                text-align: center;
+               
                  img{
-            margin: 0 2%;
+                    flex: 0 5%;
+            margin: 1% 10%;
             }
             
         }
