@@ -16,6 +16,7 @@ function Menu(props) {
 
   function showPodMenuFeatures(){
     setShowMenuListFeatures(!showMenuListFeatures);
+    
   }
   function showPodMenuCompany(){
     setShowMenuListCompany(!showMenuListCompany);
@@ -24,8 +25,8 @@ function Menu(props) {
     <ul className="menuList">
       <li onClick={() => showPodMenuFeatures()}>Features <img src={showMenuListFeatures ? arrowUpIcon : arrowDownIcon} alt="arrow down/up icon" className="icon"></img>
       {showMenuListFeatures ?
-      <ul className="podMenuList">
-        <li><img src={todoIcon} alt="todo icon" className="icon"></img>Todo List</li>
+      <ul className="podMenuListFeatures">
+        <li><img src={todoIcon} alt="todo icon" className="icon" ></img>Todo List</li>
         <li><img src={iconCalendar} alt="calendar icon" className="icon"></img>Calendar</li>
         <li><img src={iconReminder} alt="reminder icon" className="icon"></img>Reminders</li>
         <li><img src={iconPlanning} alt="planning icon" className="icon"></img>Planning</li>
@@ -34,13 +35,13 @@ function Menu(props) {
       </li>
       <li onClick={() => showPodMenuCompany()}>Company <img src={showMenuListCompany ? arrowUpIcon : arrowDownIcon} alt="arrow down/up icon" className="icon"></img>
       {showMenuListCompany ?
-      <ul className="podMenuList">
+      <ul className="podMenuListCompany">
         <li>History</li>
         <li>Our Team</li>
         <li>Blog</li>
        </ul> : "" }
       </li>
-      <li>Careers</li>
+      <li >Careers</li>
       <li>About</li>
 
 

@@ -1,6 +1,7 @@
 .mainBarComponent{
     display: flex;
+    flex: 0 70%;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0;
 }

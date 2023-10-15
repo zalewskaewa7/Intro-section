@@ -1,0 +1,61 @@
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .leftSideOfContent{
+        display:flex;
+        flex-flow: row wrap;
+        flex: 0 45%;
+        margin: 0% 2% 4% 2%;
+        padding: 2%;
+        
+        h1{
+            font-size: 4.5rem;
+            flex: 0 70%;
+        }
+        p{
+            flex: 0 70%;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: hsl(0, 0%, 41%);
+            margin: 3% 0 3% 0;
+            
+
+        }
+        button{
+            flex: 0 40%;
+            background-color: hsl(0, 0%, 8%);
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 10px;
+            margin: 4% 0;
+            padding: 2%;
+            width: 20%;
+
+             }
+
+        .advertisementsDiv{
+            flex: 1 100%;
+            margin: 10% 0 1% 0;
+            padding: 2% 0;
+        }
+            
+    
+
+    }
+
+    .rightSideOfContent{
+        flex:  50%;
+        margin: 0 2%;
+
+
+        .mainImage{
+        width: 70%;
+        height: auto;
+    }
+    }
+
+    
+}
