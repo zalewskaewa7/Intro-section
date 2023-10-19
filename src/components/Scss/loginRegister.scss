@@ -1,7 +1,7 @@
 .loginRegisterComponent{
     display: flex;
     flex: 0 20%;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
 
     li{
@@ -21,5 +21,11 @@
         border-radius: 10px;
         padding: 2%;
         text-align: center;
+    }
+}
+
+@media all and (max-width:  375px)  {
+    .loginRegisterComponent{
+        display:none;
     }
 }

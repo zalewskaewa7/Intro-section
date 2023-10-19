@@ -2,17 +2,18 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 7%;
 
     .leftSideOfContent{
         display:flex;
         flex-flow: row wrap;
         flex: 0 45%;
-        margin: 0% 2% 4% 2%;
-        padding: 2%;
+        margin: 0% 2% 2% 2%;
+        padding: 0 2% 0 2%;
         
         h1{
-            font-size: 4.5rem;
-            flex: 0 70%;
+            font-size: 5.2rem;
+            flex: 1 100%;
         }
         p{
             flex: 0 70%;
@@ -38,8 +39,8 @@ main{
 
         .advertisementsDiv{
             flex: 1 100%;
-            margin: 10% 0 1% 0;
-            padding: 2% 0;
+            margin: 14% 0 0 0;
+            padding: 2% 0 0 0;
         }
             
     

@@ -1,25 +1,36 @@
-.menuList{
+.menu{
     display: flex;
-    flex: 0 60%;
+    flex: 0 50%;
 
-    justify-content: space-between;
+    .hamburgerIcon{
+        display: none;
+    }
+
+   .menuList{
+    display: flex;
+    flex: 1 100%;
+
+    justify-content: space-around;
 
     
     li{
         list-style-type: none;
-        margin: 2%;
+        margin: 1%;
         color: hsl(0, 0%, 41%);
 
-        flex: 0 25%;
+        flex: 0 20%;
         cursor: pointer;
 
         
 
         .podMenuListFeatures{
-            padding: 4% 6%;
-            margin: 20% 20% 20% -15%;
+            position:absolute;
+            top: 10%;
+            left: 18%;
+            padding: 1%;
             background-color: white;
             border-radius: 10px;
+            min-width: 100px;
             li{
                 display:flex;
                 justify-content:flex-start;
@@ -36,10 +47,13 @@
         }
         }
         .podMenuListCompany{
-            padding: 4% 6%;
-            margin: 20% 30% 20% 0%;
+            position:absolute;
+            top: 10%;
+            left: 28%;
+            padding: 1% 0;
             background-color: white;
             border-radius: 10px;
+            min-width: 83px;
             li{
                 display:flex;
                 justify-content:flex-start;
@@ -57,4 +71,13 @@
         font-weight: 550;
      }  
 
-    }
+    } 
+}
+
+
+    @media all and (max-width:  375px)  {
+        .menu{
+            display:none;
+            }
+
+        }

@@ -1,4 +1,13 @@
 .logoComponent{
     flex: 0 20%;
     margin: 2%;
+    text-align:  center;
+}
+
+@media all and (max-width:  375px)  {
+    .logoComponent{
+        position: absolute;
+        top:1%;
+        left:3%;
+    }
 }

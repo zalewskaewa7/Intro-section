@@ -1,0 +1,73 @@
+.mobileMenuComponent{
+    display:none;
+}
+
+@media all and (max-width:  375px)  {
+    .mobileMenuComponent{
+        display:flex;
+
+
+        .hamburgerIcon{
+            display:block;
+            width: 15%;
+            height: auto;
+            position:absolute;
+            top: 2%;
+            right:3%;
+        }
+
+        .mobileMenu{
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        background-color: white;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 250px;
+        margin: 0;
+
+        .hamburgerIconClose{
+        align-self: flex-end;
+        width: 15%;
+        height: auto;
+        margin: 5% ;
+
+
+    }
+
+    .hideMenuList{
+        display: none;
+    }
+    .menuList{
+        display:flex;
+        flex-flow:row wrap;
+        flex: 0 80%;
+        justify-content: flex-start;
+        align-content: flex-start;
+       
+
+        li{
+            flex: 0 80%;
+            margin: 4% 4% 4% 0;
+            list-style-type: none;
+
+
+            .podMenuListFeatures{
+                position: static;
+            }
+            .podMenuListCompany{
+                position:static;
+            }
+            img{
+                flex: 0 5%;
+                margin: 1% 10%;
+        }
+        }
+    }
+    }
+    
+    }
+    
+}

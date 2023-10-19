@@ -1,10 +1,10 @@
 import React from 'react'
-import "../Scss/content.scss"
-import databiz from "../images/client-databiz.svg";
-import audiophile from "../images/client-audiophile.svg"
-import meet from "../images/client-meet.svg"
-import maker from "../images/client-maker.svg"
-import mainImage from "../images/image-hero-desktop.png"
+import "./Scss/content.scss"
+import databiz from "./images/client-databiz.svg";
+import audiophile from "./images/client-audiophile.svg"
+import meet from "./images/client-meet.svg"
+import maker from "./images/client-maker.svg"
+import mainImage from "./images/image-hero-desktop.png"
 
 function Content() {
   return (
