@@ -1,15 +1,23 @@
-import React from 'react'
+import React , {useState} from 'react'
 import "./Scss/content.scss"
 import databiz from "./images/client-databiz.svg";
 import audiophile from "./images/client-audiophile.svg"
 import meet from "./images/client-meet.svg"
 import maker from "./images/client-maker.svg"
 import mainImage from "./images/image-hero-desktop.png"
+import mainMobileImage from "./images/image-hero-mobile.png"
 
 function Content() {
+  const[windowsWidth, setWindowsWidth]=useState(window.innerWidth); 
   return (
     <main>
        <div className="leftSideOfContent">
+      {
+        (windowsWidth <= 375) ?
+              <img src={mainMobileImage} alt="databiz advertisement" className="mainMobileImage" ></img>
+        : ""
+      } 
+
         <h1>Make <br />remote work</h1>
         <p> Get your team in sync, no matter your location. Streamline processes, 
             create team rituals, and watch productivity soar.

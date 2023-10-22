@@ -1,14 +1,15 @@
-.loginRegisterComponent{
-    display: flex;
-    flex: 0 20%;
+@media all and (max-width:  375px)  {
+.mobileLoginRegisterComponent{
+    display:flex;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
-
+    flex: 1 100%;
     li{
         list-style-type: none;
         margin: 0 2%;
         padding: 2%;
-        flex: 0 18%;
+        flex: 1 100%;
+        text-align: center;
         color: hsl(0, 0%, 41%);
         cursor: pointer;
     }
@@ -22,12 +23,6 @@
         padding: 2%;
         text-align: center;
     }
+
 }
-
-@media all and (max-width:  375px)  {
-    .loginRegisterComponent{
-        display:none;
-    }
-
-    
 }

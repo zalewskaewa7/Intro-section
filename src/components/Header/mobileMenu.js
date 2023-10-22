@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
-import "./Scss/mobileMenu.scss"
-import arrowDownIcon from "./images/icon-arrow-down.svg"
-import arrowUpIcon from "./images/icon-arrow-up.svg"
-import todoIcon from "./images/icon-todo.svg"
-import iconReminder from "./images/icon-reminders.svg"
-import iconPlanning from "./images/icon-planning.svg"
-import iconCalendar from "./images/icon-calendar.svg"
-import hamburgerIcon from  "./images/icon-menu.svg"
-import hamburgerIconClose from "./images/icon-close-menu.svg"
-import LoginRegister from "./LoginRegister"
+import "../Scss/mobileMenu.scss"
+import arrowDownIcon from "../images/icon-arrow-down.svg"
+import arrowUpIcon from "../images/icon-arrow-up.svg"
+import todoIcon from "../images/icon-todo.svg"
+import iconReminder from "../images/icon-reminders.svg"
+import iconPlanning from "../images/icon-planning.svg"
+import iconCalendar from "../images/icon-calendar.svg"
+import hamburgerIcon from  "../images/icon-menu.svg"
+import hamburgerIconClose from "../images/icon-close-menu.svg"
+import MobileLoginRegister from "./mobileLoginRegister"
 
 
 
@@ -34,7 +34,10 @@ function MobileMenu(props) {
     {
       hamburger ? "" :
       <div className="mobileMenu">
-        <img className="hamburgerIconClose" alt="hamburger icon" src={hamburgerIconClose} onClick={() => showMobileMenu()}></img>
+        <div className='hamburgeriIconClose'>
+                  <img className="hamburgerIconCloseImg" alt="hamburger icon" src={hamburgerIconClose} onClick={() => showMobileMenu()}></img>
+
+        </div>
 
         <ul className="menuList">
       <li onClick={() => showPodMenuFeatures()}>Features <img src={showMenuListFeatures ? arrowUpIcon : arrowDownIcon} alt="arrow down/up icon" className="icon"></img>
@@ -60,7 +63,7 @@ function MobileMenu(props) {
 
 
     </ul> 
-        <LoginRegister />
+        <MobileLoginRegister />
 
       </div>
     

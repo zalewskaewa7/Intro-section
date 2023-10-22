@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import "./Scss/menu.scss"
-import arrowDownIcon from "./images/icon-arrow-down.svg"
-import arrowUpIcon from "./images/icon-arrow-up.svg"
-import todoIcon from "./images/icon-todo.svg"
-import iconReminder from "./images/icon-reminders.svg"
-import iconPlanning from "./images/icon-planning.svg"
-import iconCalendar from "./images/icon-calendar.svg"
+import "../Scss/menu.scss"
+import arrowDownIcon from "../images/icon-arrow-down.svg"
+import arrowUpIcon from "../images/icon-arrow-up.svg"
+import todoIcon from "../images/icon-todo.svg"
+import iconReminder from "../images/icon-reminders.svg"
+import iconPlanning from "../images/icon-planning.svg"
+import iconCalendar from "../images/icon-calendar.svg"
 
 
 function Menu(props) {
