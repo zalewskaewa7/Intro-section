@@ -12,9 +12,11 @@
         margin: 0% 2% 2% 2%;
         padding: 0 2% 0 2%;
         
+    
+        
         
         h1{
-            font-size: 5.2rem;
+            font-size: 6.2rem;
             flex: 1 100%;
         }
         p{
@@ -50,8 +52,10 @@
     }
 
     .rightSideOfContent{
+        display:flex;
         flex:  50%;
         margin: 0 2%;
+        justify-content: center;
 
 
         .mainImage{
@@ -66,19 +70,66 @@
 }
 
 
-@media only screen and (max-width:  375px)  {
-.mainMobileImage{
-        width: 50%;
-        height: auto;
+@media all and (max-width:  375px)  {
+    main{
+        margin: 0;
+        flex: 1 100%;
+
+    
+    .leftSideOfContent{
+        display: flex;
+        flex-flow: row wrap; 
+        justify-content: center;
+        width: 100%;
+        flex: 1 100%;
+        margin: 0;
+        padding: 0;
+
+       h1{
+        font-size: 2.4rem;
+        flex: 1 100%;
+        text-align: center;
     }
+      .mainMobileImage{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    p{
+        text-align: center;
+        flex: 1 100%;
+        margin: 2%;
+    }
+
+    button{
+        text-align: center;
+    }
+    .advertisementsDiv{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        flex: 1 100%;
+        margin: 10% 0 0 0 ;
+        padding: 0;
+
+        .advertisement{
+            width:17%;
+            height: 60%;
+        }
+    }
+    }
+
     .rightSideOfContent{
-        flex:  1 100%;
-        margin: 0 2%;
+       display:none;
 
     .mainImage{
         display: none;
     }
 
     
+
+    
+}
 }
 }

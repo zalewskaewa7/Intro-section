@@ -3,6 +3,7 @@
     display:flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-self: flex-start;
     flex: 1 100%;
     li{
         list-style-type: none;

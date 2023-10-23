@@ -4,3 +4,9 @@ header{
     margin: 1%;
     
 }
+@media all and (max-width:  375px)  {
+header{
+    margin: 0;
+    padding: 0;
+}
+}
